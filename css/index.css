@@ -1,0 +1,66 @@
+:root {
+  --bg-colour: #ffe;
+  --trim-colour: #1111dd;
+  --trim-colour-1: #111199;
+  --trim-colour-2: #111177;
+}
+
+nav ul li:first-child {
+  background-color: var(--trim-colour);
+}
+
+nav ul li:first-child:hover {
+  background-color: var(--trim-colour-1);
+}
+
+#mainArticle {
+  margin: 0 20px 20px 20px;
+  text-align: justify;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#mainArticle h2 {
+  width: 100%;
+}
+
+.mePhotos {
+  width: 45%;
+  height: fit-content;
+  border: var(--trim-colour) solid;
+  border-width: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#pic2, #pic3 {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+
+  #mainArticle h2 {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+
+  #mainArticle p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .mePhotos {
+    width: unset;
+    height: 200px;
+    transition: all 0.5s;
+  }
+
+  #pic2, #pic3 {
+    display: block;
+  }
+
+  .mePhotos:hover {
+    height: 300px;
+  }
+}

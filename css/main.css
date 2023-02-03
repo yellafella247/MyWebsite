@@ -1,0 +1,210 @@
+:root {
+  --bg-colour: #ffe;
+  --trim-colour: #1111dd;
+  --trim-colour-1: #111199;
+  --trim-colour-2: #111177;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  
+  background-image: url('../images/CompScreen.jpg');
+  background-size: 100% 100vh;
+  background-position: 43.5% 0%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 12vh;
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 800px;
+  height: calc(100vh - 180px);
+  max-height: 700px;
+  /* background-color: #ffffee;
+  background-image: '';
+  border: 50px inset #ffffee;
+  border-color: #ffffee #eeeedd #ddddcc #ffffee; */
+  /* font-size: calc(2vw + 3px);*/
+  filter: blur(0.6px) contrast(80%); 
+}
+
+#compScreen {
+  position: relative;
+  background: var(--bg-colour);
+  border-color: var(--trim-colour);
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  color: var(--trim-colour);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: max-content;
+  height: max-content;
+  background-color: var(--bg-colour);
+  font-size: calc(3vw + 3px);
+}
+
+h2 {
+  font-size: calc(2.5vw + 3px);
+}
+
+#topPic {
+  display: flex;
+  background: url("https://media4.giphy.com/media/xUOxeZR9gmFzbH8FRS/giphy.gif?cid=790b76117a8a7fafaea8b2b25e2bb12bad6b5ad77f020404&rid=giphy.gif&ct=g");
+  background-size: contain;
+  background-repeat: round;
+  filter: hue-rotate(0deg);
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  background-color: var(--trim-colour-2);
+  color: black;
+  height: 5%;
+  align-items: center;
+}
+
+nav ul {
+  flex-grow: 1;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 100%;
+}
+
+nav ul li {
+  background: var(--trim-colour-1);
+  width: 100px;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: var(--trim-colour);
+}
+
+nav ul li a {
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 80%;
+  /*padding-right: 20px;*/
+}
+
+body ::-webkit-scrollbar {
+  width: 20px;
+}
+
+body ::-webkit-scrollbar-track {
+  background: var(--trim-colour-2);
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: var(--trim-colour-1);
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: var(--trim-colour);
+}
+
+footer {
+  height: 100px;
+  border-top: 10px solid var(--trim-colour);
+  left: 0;
+  right: 0;
+}
+
+footer #footerBG {
+  height: 100%;
+  background: url('https://i.giphy.com/media/cgeOW2Rg7SdFQZE78e/giphy.webp');
+  filter: hue-rotate(270deg);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p {
+  background-color: var(--bg-colour);
+  margin: 0;
+}
+
+/* @media (min-width: 768px) {
+  body {
+    width: unset;
+    background-image: url('../images/CompScreen.jpg');
+    background-color: #000;
+    background-size: unset;
+    background-position: 50% top;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 15vh;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 950px;
+    height: 700px;
+  }
+
+  body ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  body ::-webkit-scrollbar-track {
+    background: #0a0;
+  }
+
+  body ::-webkit-scrollbar-thumb {
+    background: #1d1;
+  }
+
+  body ::-webkit-scrollbar-thumb:hover {
+    background: #2f2;
+  }
+
+  #compScreen {
+    position: relative;
+    background: #000;
+    border-color: #2f2;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: unset;
+    height: 100%;
+    width: 100%;
+    color: #2f2;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  nav span {
+    display: none;
+  }
+} */
